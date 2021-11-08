@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title nai re vai</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: cursive;
+        }
+        div{
+            border:2px solid tomato;
+            border-radius: 20px;
+            margin:5px;
+            padding:5px;
+
+
+        }
+    </style>
+</head>
+<body>
+        
+        <section>
+        <div>
+            <h1>hei-1</h1>
+            <p class="author">author-1</p>
+        <p class="description" title="hei tore ses" id='hridoy'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div>
+        <div>
+            <h1 title='hei ki obostha'>hei-1</h1>
+            <p class="author">author-2</p>
+        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div>
+        <div>
+            <h1>hei-1</h1>
+            <p class="author">author-3</p>
+        <p class="description" id='tui'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div> 
+    </section>
+
+    <section>
+        <div>
+            <h4>list aand you are very nice</h4>
+            <ul id="unorder">
+                <li>home</li>
+                <li>about</li>
+                <li>when</li>
+                <li>are</li>
+                <li>hei</li>
+            </ul>
+        </div>
+    </section>
+    
+    <script>
+       const article= document.getElementById('tui');
+       const newparagraph=document.createElement('p');
+       newparagraph.innerHTML='the name of our country is bangadesh ..it become indepenedent in 1971 ..but it has  a large population';
+       article.appendChild(newparagraph);
+
+    
+     
+
+
+
+    </script>
+    <script>
+       const ul=documnet.getElementById('unorder');
+       const li=document.createElement('li')
+       li.innerHTML='heiiiii'
+       ul.appendChild(li);
+    </script>
+
+    
+</body>
+</html>

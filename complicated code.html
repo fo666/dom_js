@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is document</title>
+</head>
+<body>
+    <div id='container'>
+        <ul id='matha'>
+            <li id=redoy class='item'>hridoy is not a fool person</li>
+            <li class='item'>foysal is not a fool person</li>
+            <li class='item'>mohiful is not a fool person</li>
+            <li class='item'>hrsal is not a fool person</li>
+            <li class='item'>emon is not a fool person</li>
+            <li class='item'>emonna is not a fool person</li>
+            <li class="item">the name of our country </li>
+        </ul>
+        <button id='addNew'>add new item</button>
+    </div>
+    
+
+    <script>
+       //var items=document.getElementsByClassName('item')
+        //console.log(items)
+        //for( var i=0; i<items.length; i++){
+          //  var item=items[i]
+            //item.addEventListener('click',function(event){
+            //event.target.parentNode.removeChild(event.target)
+            //})
+        //}
+        
+        document.getElementById('addNew').addEventListener('click',function(event){
+            var itemParent=document.getElementById('matha')
+            var newItem=document.createElement('li');
+            newItem.innerText='this is not pure'
+            itemParent.appendChild(newItem);
+        })
+        document.getElementById('matha').addEventListener('click',function(){
+            event.target.parentNode.removeChild(event.target)
+
+        })
+
+
+        
+    </script>
+</body>

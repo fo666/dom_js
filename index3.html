@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title nai re vai</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: cursive;
+        }
+        div{
+            border:2px solid tomato;
+            border-radius: 20px;
+            margin:5px;
+            padding:5px;
+
+
+        }
+    </style>
+</head>
+<body>
+        
+        <section>
+        <div>
+            <h1>hei-1</h1>
+            <p class="author">author-1</p>
+        <p class="description" title="hei tore ses" id='hridoy'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div>
+        <div>
+            <h1 title='hei ki obostha'>hei-1</h1>
+            <p class="author">author-2</p>
+        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div>
+        <div>
+            <h1>hei-1</h1>
+            <p class="author">author-3</p>
+        <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+
+        </div> 
+    </section>
+    <script>
+        var authors=document.getElementsByClassName('author')
+        for(var i=0; i<authors.length; i++){
+            var element=authors[i]
+            console.log(element.innerHTML);
+            element.innerHTML=('lekhok-'  + (i+1))
+            element.setAttribute("title","the name of our country")
+            console.log(element)
+            element.style.backgroundColor='lightblue';
+            element.style.margin='10px'
+        
+
+            
+
+        }
+
+    </script>
+    
+</body>
+</html>
